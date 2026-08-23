@@ -1,13 +1,14 @@
-class demo{
-	public static void main(String[]args){
-		String s = "java dsa coures";
-		String s1 = "";
-	for(int i=0 ; i<s.length() ; i++){
-		 char ch = s.charAt(i);
-		if(ch!= ' '){
-		s1 = s1+ch;
-	}
-		}
-	System.out.println(s1);
-	}
-		}
+class demo {
+    public static void main(String[] args) {
+        String s = "java dsa coures";
+        StringBuffer sb = new StringBuffer(); 
+        
+              String[] a = s.split(" "); 
+        
+               for (int i = 0; i < a.length; i++) {
+            sb.append(a[i]);         
+	}	
+        
+        System.out.println(sb.toString()); 
+    }
+}
